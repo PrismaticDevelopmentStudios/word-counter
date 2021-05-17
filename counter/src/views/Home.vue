@@ -1,7 +1,7 @@
 <template>
   <div class="home">
     <p class="title">Word Counter</p>
-    <div class="center">
+    <div class="center left">
       <textarea
         v-model="words"
         class="left"
@@ -13,7 +13,7 @@
         <div class="left">Words: {{ wordCount }}</div>
       </div>
     </div>
-    <p class="text">
+    <p class="text left">
       <a class="header">Lorem,</a>
       ipsum dolor sit amet consectetur adipisicing elit. Perferendis corrupti
       tempore dolorum animi molestiae esse. Harum similique, laudantium tempora
@@ -155,7 +155,7 @@ button {
   background: rgb(248, 129, 129);
 }
 .title {
-  margin: 0;
+  margin: 1;
   font-family: monospace;
   font-size: 2em;
 }
