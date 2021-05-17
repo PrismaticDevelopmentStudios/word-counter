@@ -16,7 +16,7 @@
     <div class="bg">
       <br />
       <p class="text">
-        <a class="header left">Lorem,</a>
+        <a class="header">Lorem,</a>
         ipsum dolor sit amet consectetur adipisicing elit. Perferendis corrupti
         tempore dolorum animi molestiae esse. Harum similique, laudantium
         tempora totam eum sapiente? Praesentium quae ducimus aperiam molestias
@@ -170,6 +170,7 @@ button {
   width: 90%;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 5%;
   background: white;
 }
 </style>
