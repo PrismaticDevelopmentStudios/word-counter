@@ -72,7 +72,7 @@
         quibusdam provident placeat quia, officia autem eum perspiciatis!
         Distinctio excepturi reiciendis non alias.
       </p>
-      <p class="text">
+      <p class="text mb">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, illo,
         necessitatibus cumque dicta corporis laboriosam exercitationem fugit
         deserunt dolore sequi quasi, quidem officia dolor aperiam adipisci totam
@@ -85,6 +85,7 @@
         accusamus nam iste minima modi. Dolore, amet neque? Quos, culpa
         repudiandae. Eos explicabo suscipit doloremque provident recusandae!
       </p>
+      <br />
     </div>
   </div>
 </template>
@@ -100,11 +101,13 @@ export default {
   },
   methods: {
     count() {
-      var text = this.words.split(" ");
-      this.wordCount = 0;
-      for (var i = 0; i < text.length; i++) {
-        if (text[i] !== " ") {
-          this.wordCount++;
+      if (this.words != undefined) {
+        var text = this.words.split(" ");
+        this.wordCount = 0;
+        for (var i = 0; i < text.length; i++) {
+          if (text[i] !== " ") {
+            this.wordCount++;
+          }
         }
       }
     },
@@ -166,11 +169,13 @@ button {
   font-size: 2em;
 }
 .bg {
-  height: 80%;
   width: 90%;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 5%;
+  margin-bottom: 5em;
   background: white;
+}
+.mb {
+  margin-bottom: 2em;
 }
 </style>
